@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Simple Calculator  ");
+		System.out.println("------------------------------  ");
+		System.out.println(" 1 for addition \n 2 for substraction \n 3 for mutiplication \n 4 for division \n ");
+		System.out.println("------------------------------  ");
+		System.out.println("Please enter your choice : ");
+		int choice=sc.nextInt();
+		System.out.println("Please enter 2 numbers : \n");
+		int num1=sc.nextInt();
+		int num2=sc.nextInt();
+		Calculator obj=new Calculator();
+		obj.cal(choice, num1, num2);
+		obj.display();
+
+	}
+
+}
+
